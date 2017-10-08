@@ -1,0 +1,43 @@
+diff -u game_old.js game_new.js # shows editting changes bet the two files
+
+cd ~                          # change directories to your home directory
+mkdir version-control         # make version-control directory
+cd version-control            # go to version-control directory
+mkdir reflections             # create reflections directory
+cd reflections                # go to reflections directory
+
+pwd 						# print working directory - shows what directory you are in
+ls  						# list the files in this directory
+
+touch file_name.txt					#creates a new file
+echo 'Hello World' > file_name.txt	#creates a new file with 'Hello World' text
+
+							#####
+open -a/Applications/TextWrangler.app lesson1_reflections.txt 	
+							# open file with TextWrangler app
+							# -a Lists all files including dot (.) files
+							
+
+######  git commands  ################							
+git clone url
+git log
+git diff file_old file_new
+git checkout
+tw 						# alias for calling the text wrangler editor
+
+git init				# creates git repository in a directory
+git status				# shows status even no commits have taken place
+git add <file> 			# to include in what will be committed
+
+
+############ following files customized the terminal experience ######
+git-completion.bash
+git-promt.sh
+.bash_profile				
+
+
+########## git configurations made ###############
+
+git config --global core.editor "tw -n -w"
+git config --global push.default upstream
+git config --global merge.conflictstyle diff3
