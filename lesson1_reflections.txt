@@ -12,7 +12,8 @@ ls  						# list the files in this directory
 touch file_name.txt					#creates a new file
 echo 'Hello World' > file_name.txt	#creates a new file with 'Hello World' text
 
-							#####
+
+#####
 open -a/Applications/TextWrangler.app lesson1_reflections.txt 	
 							# open file with TextWrangler app
 							# -a Lists all files including dot (.) files
@@ -38,6 +39,12 @@ git-promt.sh
 
 ########## git configurations made ###############
 
-git config --global core.editor "tw -n -w"
+git config --global core.editor "edit -w"		# text wrangler default editor (with command line tools enabled)
 git config --global push.default upstream
 git config --global merge.conflictstyle diff3
+
+
+####### commit messages ############################
+git commit -m "Commit message"				# type message in terminal
+git commit									# brings up default text editor for message
+http://udacity.github.io/git-styleguide/	# website for styling suggestions
