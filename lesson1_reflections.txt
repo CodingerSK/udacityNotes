@@ -26,7 +26,7 @@ git log --graph --oneline  master branch
 git diff file_old file_new
 git checkout
 tw 						# alias for calling the text wrangler editor
-
+code 					# alias for calling the vs code
 git init				# creates git repository in a directory
 git status				# shows status even no commits have taken place
 git add <file> 			# to include in what will be committed
