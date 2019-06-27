@@ -30,6 +30,7 @@ code 					# alias for calling the vs code
 git init				# creates git repository in a directory
 git status				# shows status even no commits have taken place
 git add <file> 			# to include in what will be committed
+git remote add origin url   # name your remote origin
 
 
 ############ following files customized the terminal experience ######
