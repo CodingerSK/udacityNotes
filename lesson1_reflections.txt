@@ -22,6 +22,7 @@ open -a/Applications/TextWrangler.app lesson1_reflections.txt
 ######  git commands  ################							
 git clone url
 git log
+git log --graph --oneline  master branch 
 git diff file_old file_new
 git checkout
 tw 						# alias for calling the text wrangler editor
@@ -40,6 +41,7 @@ git-promt.sh
 ########## git configurations made ###############
 
 git config --global core.editor "edit -w"		# text wrangler default editor (with command line tools enabled)
+git config --global core.editor "code --wait"           # vs code default editor
 git config --global push.default upstream
 git config --global merge.conflictstyle diff3
 
